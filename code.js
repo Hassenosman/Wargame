@@ -1,3 +1,4 @@
+// create a class called card and using a constructor to place value and suit of cards
 class Card {
     constructor(value, suit) {
         this.suit = suit;
@@ -15,7 +16,7 @@ class Deck {
             }
         }
     }
-
+// create a shuffle deck using math.floor and math.random so that the cards could be shuffled correctly 
     shuffledeck() {
         for (let i = this.cards.length - 1; i > 0; i--) {
             let j = Math.floor(Math.random() * (i + 1));
@@ -27,7 +28,7 @@ class Deck {
         return this.cards.pop();
     }
 }
-
+// name a class called Player 
 class Player {
     constructor(name) {
         this.name = name;
@@ -39,7 +40,8 @@ class Player {
         return this.deck.dealdeck();
     }
 }
-
+// make a function for player 1 and 2 so that the player can deal a deck using if else statements and declare another varibale
+// for player 1
 function play(player1, player2) {
     let player1Score = 0;
     let player2Score = 0;
